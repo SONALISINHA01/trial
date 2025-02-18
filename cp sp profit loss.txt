@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+    float x;
+    cout<<"enter the cost price: ";
+    cin>>x;
+    float y;
+    cout<<"enter the selling price: ";
+    cin>>y;
+    if(y>x){
+        float pf;
+        pf = ((y-x)/x);
+        cout<<"Yay! you have made a profit of "<<pf*100<<"%"<<endl;
+    }
+    else if(y==x){
+
+        cout<<"you have made no profit, no loss";
+    }
+    else{
+        float l;
+        l = ((x-y)/y);
+        cout<<"woops! you have made the loss of "<<l*100<<"%"<<endl;
+    }
+}
+
